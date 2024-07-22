@@ -35,6 +35,7 @@ Uma vez que a aplicação estiver em execução, você pode acessar a API em `ht
 A estrutura do projeto é a seguinte:
 
 desafio-uol-backend/
+```bash
 │
 ├── src/
 │ ├── main/
@@ -53,6 +54,7 @@ desafio-uol-backend/
 ├── .env
 ├── pom.xml
 └── ...
+```
 
 ## Contribuição
 Se você quiser contribuir com este projeto, por favor siga os passos abaixo:
