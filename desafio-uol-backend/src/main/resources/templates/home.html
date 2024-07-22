@@ -28,7 +28,7 @@
 </form>
 
 <div class="lista-cadastrados">
-    <!--exibir lista aqui -->
+    <!-- exibe lista -->
 </div>
 
 <script>
@@ -58,11 +58,9 @@
         })
             .then(response => response.json())
             .then(data => {
-                // Lógica para tratar a resposta do servidor se necessário
                 console.log(data);
             })
             .catch(error => {
-                // Lógica para tratar os erros
                 console.error(error);
             });
     }
@@ -71,7 +69,6 @@
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                // Manipular os dados para ser exibido na tela
                 const listaCadastros = document.getElementById("lista-cadastrados");
                 listaCadastros.innerText = ""; //Limpa a lista
                 data.forEach(pessoa => {
@@ -82,7 +79,6 @@
                 });
             })
             .catch(error => {
-                // Lidar com erros
                 console.log(error);
             });
     }
